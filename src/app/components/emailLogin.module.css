@@ -1,0 +1,54 @@
+.form {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding-block: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-inline: none;
+  border-top: none;
+}
+
+.form button[type="submit"] {
+  background: #0067b8;
+  color: white;
+  padding: 7px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 110px;
+  margin-top: 120px;
+}
+
+.voltar {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+  padding: 7px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 110px;
+  margin-top: 120px;
+}
+
+.form button[type="submit"]:hover {
+  background: #0061aa;
+}
+
+.form button[type="button"]:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  gap: 5px;
+}
