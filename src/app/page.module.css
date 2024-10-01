@@ -1,159 +1,209 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url('/background.jpg');
-  background-size: cover;
-  background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .outlookTitle {
-  font-size: 40px;
-  font-weight: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 20px;
-  text-align: center;
+    font-size: 40px;
+    font-weight: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .main {
-  background-color: #ffffff;
-  width: 450px;
-  height: 340px;
-  padding: 30px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: left;
+    background-color: #ffffff;
+    width: 450px;
+    height: 340px;
+    padding: 44px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .loginContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .logo img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .logo span {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
 }
 
 .title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 0px; 
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .outlookText {
-  margin-top: 0px;
-  margin-bottom: 20px; 
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
-
 .form {
-  width: 100%;
-  position: relative;
-  margin-top: -10px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
 }
 
 .form input::placeholder {
-  text-align: left;
+    text-align: left;
 }
 
 .form input {
-  width: 100%;
-  padding-block: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  border-inline: none;
-  border-top: none;
+    width: 100%;
+    padding-block: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    font-size: 16px;
+    border-inline: none;
+    border-top: none;
 }
 
-.form button {
-  background: linear-gradient(135deg, #0078d4, #005a9e);
-  color: white;
-  padding: 6px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100px;
-  position: absolute;
-  right: 0;
-  margin-top: 120px;
+.form button[type='submit'] {
+    background: linear-gradient(135deg, #0078d4, #005a9e);
+    color: white;
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+    margin-top: 120px;
 }
 
-.form button:hover {
-  background: linear-gradient(135deg, #005a9e, #003e6b);
+.voltar {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000;
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+    margin-top: 120px;
+}
+
+.form button[type='submit']:hover {
+    background: linear-gradient(135deg, #005a9e, #003e6b);
+}
+.form button[type='button']:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .links {
-  margin-top: 5px;
-  font-size: 12px; 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    margin-block: 16px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .links a {
-  text-decoration: none;
-  margin-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
-.links strong{
-  color: #0078d4;
+.links strong {
+    color: #0078d4;
 }
 
 .links a:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .links a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .options {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .options button {
-  background: white;
-  color: #000000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 450px;
-  padding-left: 5%;
-  gap: 1rem;
-  padding: 12px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+    background: white;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding-left: 5%;
+    gap: 1rem;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .options button:hover {
-  background: linear-gradient(135deg, #e1e1e1, #cfcfcf);
+    background: linear-gradient(135deg, #e1e1e1, #cfcfcf);
 }
 
 .form input:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    gap: 5px;
+}
+
+.naoConsegueAcessar {
+    color: #0067b8;
+    font-size: 0.8125rem;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI Webfont', -apple-system, 'Helvetica Neue',
+        'Lucida Grande', 'Roboto', 'Ebrima', 'Nirmala UI', 'Gadugi',
+        'Segoe Xbox Symbol', 'Segoe UI Symbol', 'Meiryo UI', 'Khmer UI', 'Tunga',
+        'Lao UI', 'Raavi', 'Iskoola Pota', 'Latha', 'Leelawadee',
+        'Microsoft YaHei UI', 'Microsoft JhengHei UI', 'Malgun Gothic',
+        'Estrangelo Edessa', 'Microsoft Himalaya', 'Microsoft New Tai Lue',
+        'Microsoft PhagsPa', 'Microsoft Tai Le', 'Microsoft Yi Baiti',
+        'Mongolian Baiti', 'MV Boli', 'Myanmar Text', 'Cambria Math';
+}
+
+.emailDisplay p {
+    font-size: 0.9375rem;
+}
+
+.secondTitle {
+    font-size: 1.4rem;
+    color: rgb(27, 27, 27);
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.flexLinks {
+    display: flex;
+    flex-direction: column;
 }
